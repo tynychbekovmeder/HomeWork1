@@ -1,17 +1,18 @@
 package com.company;
 
-public class AutoBase {
+public class InformationOfDriver1 {
     private int id;
     private String name;
     private String driver;
     private String state;
 
-    public AutoBase(int id, String name, String driver, String state) {
+    public InformationOfDriver1(int id, String name, String driver, String state) {
         this.id = id;
         this.name = name;
         this.driver = driver;
         this.state = state;
     }
+
 
     public int getId() {
         return id;
@@ -43,12 +44,5 @@ public class AutoBase {
 
     public void setState(String state) {
         this.state = state;
-    }
-
-    @Override
-    public String toString() {
-        return id + "name:" + name + '\'' +
-                "driver:" + driver + '\'' +
-                "state:" + state + '\'';
     }
 }
